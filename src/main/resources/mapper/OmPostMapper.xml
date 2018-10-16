@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmdemo.demo.dao.OmPostMapper" >
+
+    <resultMap id="OmPost" type="com.ssmdemo.demo.domain.OmPost">
+        <result column="abortdate" jdbcType="TIMESTAMP" property="abortdate"/>
+        <result column="builddate" jdbcType="TIMESTAMP" property="builddate"/>
+        <result column="creationtime" jdbcType="TIMESTAMP" property="cretiontime"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="dataoriginflag" jdbcType="VARCHAR" property="dataoriginflag"/>
+        <result column="dr" jdbcType="VARCHAR" property="dr"/>
+        <result column="employment" jdbcType="VARCHAR" property="employment"/>
+        <result column="enablestate" jdbcType="VARCHAR" property="enablestate"/>
+        <result column="innercode" jdbcType="VARCHAR" property="innercode"/>
+        <result column="isabort" jdbcType="VARCHAR" property="isabort"/>
+        <result column="isdeptrespon" jdbcType="VARCHAR" property="isdeptrespon"/>
+        <result column="junior" jdbcType="VARCHAR" property="junior"/>
+        <result column="modifiedtime" jdbcType="TIMESTAMP" property="modifiedtime"/>
+        <result column="modifier" jdbcType="VARCHAR" property="modifier"/>
+        <result column="pk_dept" jdbcType="VARCHAR" property="pk_dept"/>
+        <result column="pk_group" jdbcType="VARCHAR" property="pk_group"/>
+        <result column="pk_job" jdbcType="VARCHAR" property="pk_job"/>
+        <result column="pk_org" jdbcType="VARCHAR" property="pk_org"/>
+        <result column="pk_post" jdbcType="VARCHAR" property="pk_post"/>
+        <result column="pk_postseries" jdbcType="VARCHAR" property="pk_postseries"/>
+        <result column="postcode" jdbcType="VARCHAR" property="postcode"/>
+        <result column="postname" jdbcType="VARCHAR" property="postname"/>
+        <result column="postname2" jdbcType="VARCHAR" property="postname2"/>
+        <result column="postname3" jdbcType="VARCHAR" property="postname3"/>
+        <result column="postname4" jdbcType="VARCHAR" property="postname4"/>
+        <result column="postname5" jdbcType="VARCHAR" property="postname5"/>
+        <result column="postname6" jdbcType="VARCHAR" property="postname6"/>
+        <result column="reqedu" jdbcType="VARCHAR" property="reqedu"/>
+        <result column="reqexp" jdbcType="VARCHAR" property="reqexp"/>
+        <result column="reqother" jdbcType="VARCHAR" property="reqother"/>
+        <result column="reqpro" jdbcType="VARCHAR" property="reqpro"/>
+        <result column="reqsex" jdbcType="VARCHAR" property="reqsex"/>
+        <result column="reqworktime" jdbcType="TIMESTAMP" property="reqworktime"/>
+        <result column="reqyold" jdbcType="VARCHAR" property="reqyold"/>
+        <result column="seq" jdbcType="VARCHAR" property="seq"/>
+        <result column="suporior" jdbcType="VARCHAR" property="suporior"/>
+        <result column="ts" jdbcType="TIMESTAMP" property="ts"/>
+        <result column="worksumm" jdbcType="VARCHAR" property="worksumm"/>
+        <result column="worktype" jdbcType="VARCHAR" property="worktype"/>
+        <result column="hrcanceldate" jdbcType="TIMESTAMP" property="hrcanceldate"/>
+        <result column="hrcanceled" jdbcType="VARCHAR" property="hrcanceled"/>
+        <result column="iskeypost" jdbcType="VARCHAR" property="iskeypost"/>
+        <result column="isstd" jdbcType="VARCHAR" property="isstd"/>
+        <result column="pk_hrorg" jdbcType="VARCHAR" property="pk_hrorg"/>
+        <result column="pk_poststd" jdbcType="VARCHAR" property="pk_poststd"/>
+        <result column="sealflag" jdbcType="VARCHAR" property="sealflag"/>
+        <result column="inheritflag" jdbcType="VARCHAR" property="inheritflag"/>
+        <result column="maxage" jdbcType="VARCHAR" property="maxage"/>
+        <result column="minage" jdbcType="VARCHAR" property="minage"/>
+        <result column="pk_grade_source" jdbcType="VARCHAR" property="pk_grade_source"/>
+        <result column="pk_level_source" jdbcType="VARCHAR" property="pk_level_source"/>
+        <result column="sourcetype" jdbcType="VARCHAR" property="sourcetype"/>
+        <result column="pk_role" jdbcType="VARCHAR" property="pk_role"/>
+    </resultMap>
+
+    <select id="selectOmPostByName"  resultType="OmPost">
+        SELECT * FROM om_post WHERE postname = #{postname}
+    </select>
+
+    <select id="selectOmPostByCode" resultType="OmPost">
+        select postname,postcode from om_post where postcode = #{postcode}
+    </select>
+
+</mapper>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmdemo.demo.dao.JZCTMCertinfregMapper" >
+
+    <resultMap id="JZCTMCertinfreg" type="com.ssmdemo.demo.domain.JZCTMCertinfreg">
+        <result column="pk_certinfreg" jdbcType="VARCHAR" property="pk_certinfreg" />
+        <result column="pk_group" jdbcType="VARCHAR" property="pk_group" />
+        <result column="pk_org" jdbcType="VARCHAR" property="pk_org" />
+        <result column="pk_psndoc" jdbcType="VARCHAR" property="pk_psndoc" />
+        <result column="vcode" jdbcType="VARCHAR" property="vcode" />
+        <result column="vname" jdbcType="VARCHAR" property="vname" />
+        <result column="pk_credtype" jdbcType="VARCHAR" property="pk_credtype" />
+        <result column="dcert" jdbcType="VARCHAR" property="dcert" />
+        <result column="vcert_org" jdbcType="VARCHAR" property="vcert_org" />
+        <result column="bneedyck" jdbcType="VARCHAR" property="bneedyck" />
+        <result column="bkeepedu" jdbcType="VARCHAR" property="bkeepedu" />
+        <result column="icert_statu" jdbcType="VARCHAR" property="icert_statu" />
+        <result column="iborrow_statu" jdbcType="VARCHAR" property="iborrow_statu" />
+        <result column="vmemo" jdbcType="VARCHAR" property="vmemo" />
+        <result column="vdef1" jdbcType="VARCHAR" property="vdef1" />
+        <result column="vdef2" jdbcType="VARCHAR" property="vdef2" />
+        <result column="vdef3" jdbcType="VARCHAR" property="vdef3" />
+        <result column="vdef4" jdbcType="VARCHAR" property="vdef4" />
+        <result column="vdef5" jdbcType="VARCHAR" property="vdef5" />
+        <result column="vdef6" jdbcType="VARCHAR" property="vdef6" />
+        <result column="vdef7" jdbcType="VARCHAR" property="vdef7" />
+        <result column="vdef8" jdbcType="VARCHAR" property="vdef8" />
+        <result column="vdef9" jdbcType="VARCHAR" property="vdef9" />
+        <result column="vdef10" jdbcType="VARCHAR" property="vdef10" />
+        <result column="vdef11" jdbcType="VARCHAR" property="vdef11" />
+        <result column="vdef12" jdbcType="VARCHAR" property="vdef12" />
+        <result column="vdef13" jdbcType="VARCHAR" property="vdef13" />
+        <result column="vdef14" jdbcType="VARCHAR" property="vdef14" />
+        <result column="vdef15" jdbcType="VARCHAR" property="vdef15" />
+        <result column="vdef16" jdbcType="VARCHAR" property="vdef16" />
+        <result column="vdef17" jdbcType="VARCHAR" property="vdef17" />
+        <result column="vdef18" jdbcType="VARCHAR" property="vdef18" />
+        <result column="vdef19" jdbcType="VARCHAR" property="vdef19" />
+        <result column="vdef20" jdbcType="VARCHAR" property="vdef20" />
+        <result column="vdef21" jdbcType="VARCHAR" property="vdef21" />
+        <result column="vdef22" jdbcType="VARCHAR" property="vdef22" />
+        <result column="vdef23" jdbcType="VARCHAR" property="vdef23" />
+        <result column="vdef24" jdbcType="VARCHAR" property="vdef24" />
+        <result column="vdef25" jdbcType="VARCHAR" property="vdef25" />
+        <result column="vdef26" jdbcType="VARCHAR" property="vdef26" />
+        <result column="vdef27" jdbcType="VARCHAR" property="vdef27" />
+        <result column="vdef28" jdbcType="VARCHAR" property="vdef28" />
+        <result column="vdef29" jdbcType="VARCHAR" property="vdef29" />
+        <result column="vdef30" jdbcType="VARCHAR" property="vdef30" />
+        <result column="vdef31" jdbcType="VARCHAR" property="vdef31" />
+        <result column="vdef32" jdbcType="VARCHAR" property="vdef32" />
+        <result column="vdef33" jdbcType="VARCHAR" property="vdef33" />
+        <result column="vdef34" jdbcType="VARCHAR" property="vdef34" />
+        <result column="vdef35" jdbcType="VARCHAR" property="vdef35" />
+        <result column="vdef36" jdbcType="VARCHAR" property="vdef36" />
+        <result column="vdef37" jdbcType="VARCHAR" property="vdef37" />
+        <result column="vdef38" jdbcType="VARCHAR" property="vdef38" />
+        <result column="vdef39" jdbcType="VARCHAR" property="vdef39" />
+        <result column="vdef40" jdbcType="VARCHAR" property="vdef40" />
+        <result column="vdef41" jdbcType="VARCHAR" property="vdef41" />
+        <result column="vdef42" jdbcType="VARCHAR" property="vdef42" />
+        <result column="vdef43" jdbcType="VARCHAR" property="vdef43" />
+        <result column="vdef44" jdbcType="VARCHAR" property="vdef44" />
+        <result column="vdef45" jdbcType="VARCHAR" property="vdef45" />
+        <result column="vdef46" jdbcType="VARCHAR" property="vdef46" />
+        <result column="vdef47" jdbcType="VARCHAR" property="vdef47" />
+        <result column="vdef48" jdbcType="VARCHAR" property="vdef48" />
+        <result column="vdef49" jdbcType="VARCHAR" property="vdef49" />
+        <result column="vdef50" jdbcType="VARCHAR" property="vdef50" />
+        <result column="vdef51" jdbcType="VARCHAR" property="vdef51" />
+        <result column="vdef52" jdbcType="VARCHAR" property="vdef52" />
+        <result column="vdef53" jdbcType="VARCHAR" property="vdef53" />
+        <result column="vdef54" jdbcType="VARCHAR" property="vdef54" />
+        <result column="vdef55" jdbcType="VARCHAR" property="vdef55" />
+        <result column="vdef56" jdbcType="VARCHAR" property="vdef56" />
+        <result column="vdef57" jdbcType="VARCHAR" property="vdef57" />
+        <result column="vdef58" jdbcType="VARCHAR" property="vdef58" />
+        <result column="vdef59" jdbcType="VARCHAR" property="vdef59" />
+        <result column="vdef60" jdbcType="VARCHAR" property="vdef60" />
+        <result column="creator" jdbcType="VARCHAR" property="creator" />
+        <result column="creationtime" jdbcType="TIMESTAMP" property="creationtime" />
+        <result column="modifier" jdbcType="VARCHAR" property="modifier" />
+        <result column="modifiedtime" jdbcType="TIMESTAMP" property="modifiedtime" />
+        <result column="vcert_source" jdbcType="VARCHAR" property="vcert_source" />
+        <result column="dcert_valid" jdbcType="VARCHAR" property="dcert_valid" />
+        <result column="vcert_major" jdbcType="VARCHAR" property="vcert_major"/>
+        <result column="pk_org_v" jdbcType="VARCHAR" property="pk_org_v"/>
+        <result column="pk_dept" jdbcType="VARCHAR" property="pk_dept"/>
+        <result column="pk_dept_v" jdbcType="VARCHAR" property="pk_dept_v"/>
+        <result column="enablestate" jdbcType="VARCHAR" property="enablestate"/>
+        <result column="pk_post" jdbcType="VARCHAR" property="pk_post"/>
+        <result column="idcard" jdbcType="VARCHAR" property="idcard"/>
+        <result column="ts" jdbcType="TIMESTAMP" property="ts"/>
+        <result column="dr" jdbcType="VARCHAR" property="dr"/>
+        <result column="ctypecode" jdbcType="VARCHAR" property="ctypecode   "/>
+    </resultMap>
+
+    <select id="selectJZCTMCertinfregByName"  resultMap="JZCTMCertinfreg">
+        SELECT * FROM jzctm_certinfreg WHERE vname = #{vname}
+    </select>
+
+    <select id="selectJZCTMCertinfregByCode" resultMap="JZCTMCertinfreg">
+        select vname,vcode,idcard from jzctm_certinfreg where vcode = #{vcode}
+    </select>
+
+</mapper>

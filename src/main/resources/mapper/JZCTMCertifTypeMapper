@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmdemo.demo.dao.JZCTMCertifTypeMapper" >
+
+    <resultMap id="JZCTMCertifType" type="com.ssmdemo.demo.domain.JZCTMCertifType">
+        <result column="creationtime" jdbcType="TIMESTAMP" property="creationtime"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="dr" jdbcType="VARCHAR" property="dr"/>
+        <result column="enablestate" jdbcType="VARCHAR" property="enablestate"/>
+        <result column="innercode" jdbcType="VARCHAR" property="innercode"/>
+        <result column="modifiedtime" jdbcType="TIMESTAMP" property="modifiedtime"/>
+        <result column="modifier" jdbcType="VARCHAR" property="modifier"/>
+        <result column="pk_certiftype" jdbcType="VARCHAR" property="pk_certiftype"/>
+        <result column="pk_group" jdbcType="VARCHAR" property="pk_group"/>
+        <result column="pk_org" jdbcType="VARCHAR" property="pk_org"/>
+        <result column="pk_parent" jdbcType="VARCHAR" property="pk_parent"/>
+        <result column="ts" jdbcType="TIMESTAMP" property="ts"/>
+        <result column="typeattribute" jdbcType="VARCHAR" property="typeattibute"/>
+        <result column="vcode" jdbcType="VARCHAR" property="vcode"/>
+        <result column="vdef1" jdbcType="VARCHAR" property="vdef1"/>
+        <result column="vdef2" jdbcType="VARCHAR" property="vdef2"/>
+        <result column="vdef3" jdbcType="VARCHAR" property="vdef3"/>
+        <result column="vdef4" jdbcType="VARCHAR" property="vdef4"/>
+        <result column="vdef5" jdbcType="VARCHAR" property="vdef5"/>
+        <result column="vmemo" jdbcType="VARCHAR" property="vmemo"/>
+        <result column="vname" jdbcType="VARCHAR" property="vname"/>
+        <result column="vreserve1" jdbcType="VARCHAR" property="vreserve1"/>
+        <result column="vreserve2" jdbcType="VARCHAR" property="vreserve2"/>
+        <result column="vreserve3" jdbcType="VARCHAR" property="vreserve3"/>
+        <result column="vreserve4" jdbcType="VARCHAR" property="vreserve4"/>
+        <result column="vreserve5" jdbcType="VARCHAR" property="vreserve5"/>
+    </resultMap>
+
+    <select id="selectJZCTMCertifTypeByName"  resultMap="JZCTMCertifType">
+        SELECT * FROM jzctm_certiftype WHERE vname = #{vname}
+    </select>
+
+    <select id="selectJZCTMCertifTypeByCode"  resultMap="JZCTMCertifType">
+        SELECT vname,vcode,vmemo FROM jzctm_certiftype WHERE vcode = #{vcode}
+    </select>
+
+</mapper>

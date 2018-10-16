@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmdemo.demo.dao.UserBaseInfoMapper" >
+
+    <resultMap id="UserBaseInfo" type="com.ssmdemo.demo.domain.UserBaseInfo">
+        <result column="code" jdbcType="VARCHAR" property="code" />
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="shortname" jdbcType="VARCHAR" property="shortname"/>
+        <result column="idtype" jdbcType="VARCHAR" property="idtype"/>
+        <result column="id" jdbcType="VARCHAR" property="id"/>
+        <result column="photo" jdbcType="BLOB" property="photo"/>
+        <result column="sex" jdbcType="CHAR" property="sex"/>
+        <result column="birthdate" jdbcType="TIMESTAMP" property="birthdate"/>
+        <result column="nativeplace" jdbcType="VARCHAR" property="nativeplace"/>
+        <result column="censusaddr" jdbcType="VARCHAR" property="censusaddr"/>
+        <result column="characterrpr" jdbcType="VARCHAR" property="characterrpr"/>
+        <result column="nationality" jdbcType="VARCHAR" property="nationality"/>
+        <result column="polity" jdbcType="VARCHAR" property="polity"/>
+        <result column="health" jdbcType="VARCHAR" property="health"/>
+        <result column="marital" jdbcType="VARCHAR" property="marital"/>
+        <result column="edu" jdbcType="VARCHAR" property="edu"/>
+        <result column="pk_degree" jdbcType="VARCHAR" property="pk_degree"/>
+        <result column="titletechpost" jdbcType="VARCHAR" property="titletechpost"/>
+        <result column="prof" jdbcType="VARCHAR" property="prof"/>
+        <result column="joinworkdate" jdbcType="TIMESTAMP" property="joinworkdate"/>
+        <result column="mobile" jdbcType="VARCHAR" property="mobile"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="officephone" jdbcType="VARCHAR" property="officephone"/>
+        <result column="addr" jdbcType="VARCHAR" property="addr"/>
+        <result column="postalcode" jdbcType="VARCHAR" property="postalcode"/>
+        <result column="bloodtype" jdbcType="VARCHAR" property="bloodtype"/>
+        <result column="pk_psndoc" jdbcType="CHAR" property="pk_psndoc"/>
+        <result column="pk_org" jdbcType="VARCHAR" property="pk_org"/>
+        <result column="usedname" jdbcType="VARCHAR" property="usedname"/>
+        <result column="mnecode" jdbcType="VARCHAR" property="mnecode"/>
+        <result column="penelauth" jdbcType="VARCHAR" property="penelauth"/>
+        <result column="retiredate" jdbcType="TIMESTAMP" property="retiredate"/>
+        <result column="country" jdbcType="VARCHAR" property="country"/>
+        <result column="marriagedate" jdbcType="TIMESTAMP" property="marriagedate"/>
+        <result column="permanreside" jdbcType="VARCHAR" property="permanreside"/>
+        <result column="fileaddress" jdbcType="VARCHAR" property="fileaddress"/>
+        <result column="fax" jdbcType="VARCHAR" property="fax"/>
+        <result column="secret_email" jdbcType="VARCHAR" property="secret_email"/>
+        <result column="previewphoto" jdbcType="BLOB" property="previewphoto"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="creationtime" jdbcType="TIMESTAMP" property="creationtime"/>
+        <result column="joinpolitydate" jdbcType="TIMESTAMP" property="joinpolitydate"/>
+        <result column="modifier" jdbcType="VARCHAR" property="modifier"/>
+        <result column="modifiedtime" jdbcType="TIMESTAMP" property="modifiedtime"/>
+        <result column="dataoriginflag" jdbcType="VARCHAR" property="dataoriginflag"/>
+        <result column="enablestate" jdbcType="VARCHAR" property="enablestate"/>
+        <result column="die_date" jdbcType="TIMESTAMP" property="die_date"/>
+        <result column="die_remark" jdbcType="VARCHAR" property="die_remark"/>
+        <result column="pk_group" jdbcType="VARCHAR" property="pk_group"/>
+        <result column="ishiskeypsn" jdbcType="CHAR" property="ishiskeypsn"/>
+        <result column="isshopassist" jdbcType="CHAR" property="isshopassist"/>
+        <result column="lastname" jdbcType="VARCHAR" property="lastname"/>
+        <result column="firstname" jdbcType="VARCHAR" property="firstname"/>
+        <result column="iscadre" jdbcType="CHAR" property="iscadre"/>
+        <result column="ishisleader" jdbcType="CHAR" property="ishisleader"/>
+        <result column="age" jdbcType="INTEGER" property="age"/>
+        <result column="workage" jdbcType="INTEGER" property="workage"/>
+        <result column="glbdef3" jdbcType="VARCHAR" property="glbdef3"/>
+        <result column="glbdef5" jdbcType="VARCHAR" property="glbdef5"/>
+        <result column="glbdef6" jdbcType="VARCHAR" property="glbdef6"/>
+        <result column="glbdef7" jdbcType="VARCHAR" property="glbdef7"/>
+        <result column="glbdef8" jdbcType="VARCHAR" property="glbdef8"/>
+        <result column="glbdef21" jdbcType="TIMESTAMP" property="glbdef21"/>
+        <result column="glbdef9" jdbcType="VARCHAR" property="glbdef9"/>
+        <result column="glbdef10" jdbcType="VARCHAR" property="glbdef10"/>
+        <result column="glbdef11" jdbcType="TIMESTAMP" property="glbdef11"/>
+        <result column="glbdef12" jdbcType="TIMESTAMP" property="glbdef12"/>
+        <result column="glbdef2" jdbcType="VARCHAR" property="glbdef2"/>
+        <result column="glbdef1" jdbcType="VARCHAR" property="glbdef1"/>
+        <result column="glbdef13" jdbcType="CHAR" property="glbdef13"/>
+        <result column="glbdef14" jdbcType="CHAR" property="glbdef14"/>
+        <result column="glbdef20" jdbcType="CHAR" property="glbdef20"/>
+        <result column="glbdef22" jdbcType="TIMESTAMP" property="glbdef22"/>
+        <result column="glbdef23" jdbcType="TIMESTAMP" property="glbdef23"/>
+        <result column="glbdef24" jdbcType="CHAR" property="glbdef24"/>
+        <result column="glbdef25" jdbcType="TIMESTAMP" property="glbde25"/>
+        <result column="glbdef26" jdbcType="TIMESTAMP" property="glbdef26"/>
+        <result column="glbdef27" jdbcType="VARCHAR" property="glbdef27"/>
+        <result column="glbdef28" jdbcType="VARCHAR" property="glbdef28"/>
+        <result column="glbdef29" jdbcType="VARCHAR" property="glbdef29"/>
+        <result column="glbdef30" jdbcType="VARCHAR" property="glbdef30"/>
+        <result column="glbdef31" jdbcType="VARCHAR" property="glbdef31"/>
+        <result column="glbdef32" jdbcType="VARCHAR" property="glbdef32"/>
+        <result column="glbdef33" jdbcType="VARCHAR" property="glbdef33"/>
+        <result column="glbdef34" jdbcType="VARCHAR" property="glbdef34"/>
+        <result column="glbdef35" jdbcType="VARCHAR" property="glbdef35"/>
+        <result column="glbdef36" jdbcType="VARCHAR" property="glbdef36"/>
+        <result column="glbdef37" jdbcType="TIMESTAMP" property="glbdef37"/>
+        <result column="glbdef38" jdbcType="VARCHAR" property="glbdef38"/>
+    </resultMap>
+
+    <select id="selectUserBaseInfoByName"  resultType="UserBaseInfo">
+        SELECT * FROM bd_psndoc WHERE name = #{name}
+    </select>
+
+    <select id="selectUserBaseInfoByCode" resultType="UserBaseInfo">
+        select name,code,age from bd_psndoc where code = #{code}
+    </select>
+
+</mapper>

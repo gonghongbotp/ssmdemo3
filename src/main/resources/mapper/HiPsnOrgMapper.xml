@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ssmdemo.demo.dao.HiPsnOrgMapper" >
+
+    <resultMap id="HiPsnOrg" type="com.ssmdemo.demo.domain.HiPsnOrg">
+        <result column="begindate" jdbcType="TIMESTAMP" property="begindate"/>
+        <result column="creationtime" jdbcType="TIMESTAMP" property="creationtime"/>
+        <result column="creator" jdbcType="VARCHAR" property="creator"/>
+        <result column="dr" jdbcType="VARCHAR" property="dr"/>
+        <result column="empforms" jdbcType="VARCHAR" property="empforms"/>
+        <result column="enddate" jdbcType="TIMESTAMP" property="enddate"/>
+        <result column="endflag" jdbcType="VARCHAR" property="endflag"/>
+        <result column="indoc_source" jdbcType="VARCHAR" property="indoc_source"/>
+        <result column="indocflag" jdbcType="VARCHAR" property="indoflag"/>
+        <result column="joinsysdate" jdbcType="TIMESTAMP" property="joinsysdate"/>
+        <result column="lastflag" jdbcType="VARCHAR" property="lastflag"/>
+        <result column="modifiedtime" jdbcType="TIMESTAMP" property="modifiedtime"/>
+        <result column="modifier" jdbcType="VARCHAR" property="modifier"/>
+        <result column="orgrelaid" jdbcType="VARCHAR" property="orgrelaid"/>
+        <result column="pk_group" jdbcType="VARCHAR" property="pk_group"/>
+        <result column="pk_hrorg" jdbcType="VARCHAR" property="pk_hrorg"/>
+        <result column="pk_org" jdbcType="VARCHAR" property="pk_org"/>
+        <result column="pk_psndoc" jdbcType="VARCHAR" property="pk_psndoc"/>
+        <result column="pk_psnorg" jdbcType="VARCHAR" property="pk_psnorg"/>
+        <result column="psntype" jdbcType="VARCHAR" property="psntype"/>
+        <result column="startpaydate" jdbcType="TIMESTAMP" property="startpaydate"/>
+        <result column="stoppaydate" jdbcType="TIMESTAMP" property="stoppaydate"/>
+        <result column="ts" jdbcType="TIMESTAMP" property="ts"/>
+        <result column="workage" jdbcType="VARCHAR" property="workage"/>
+        <result column="corpworkage" jdbcType="VARCHAR" property="corpworkage"/>
+        <result column="adjustcorpage" jdbcType="VARCHAR" property="adjustcorpage"/>
+    </resultMap>
+
+    <select id="selectHiPsnOrgByPkPsnDoc"  resultType="HiPsnOrg">
+        SELECT * FROM hi_psnorg WHERE pk_psndoc = #{pk_psndoc}
+    </select>
+
+
+</mapper>
